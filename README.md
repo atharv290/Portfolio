@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website built to showcase my projects, skills, experience, and achievements as a **Computer Engineering student and Full-Stack Developer**.
 
-🔗 **Live Demo:** https://portfolio-aj-brown.vercel.app/
+🔗 **Live Demo:** https://atharva-joshi-75.vercel.app/
 
 ---
 
