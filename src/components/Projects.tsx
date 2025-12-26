@@ -14,7 +14,7 @@ const projects = [
     ],
     liveLink: 'https://pdl-v2.onrender.com/',
     github: 'https://github.com/atharv290/PDL-V2',
-    image: 'src/components/PhotoShare.png',
+    image: 'public/images/PhotoShare.png',
     gradient: 'from-pink-500 to-rose-500',
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     ],
     liveLink: 'https://ayushbytes.vercel.app/',
     github: 'https://github.com/atharv290/FHIR_Microservice',
-    image: 'src/components/ayushbytes.png',
+    image: 'public/images/ayushbytes.png',
     gradient: 'from-emerald-500 to-teal-500',
   }
 ];
