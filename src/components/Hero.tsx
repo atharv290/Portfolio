@@ -13,8 +13,14 @@ export function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
   const handleDownloadResume = () => {
-  window.open("/Atharva_Joshi_Resume.pdf", "_blank");
+  const link = document.createElement("a");
+  link.href = "/Atharva_Joshi_Resume.pdf";
+  link.download = "Atharva_Joshi_Resume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 };
+
   const handleViewProjects = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     const element = document.querySelector('#projects');
