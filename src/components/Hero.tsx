@@ -13,7 +13,7 @@ export function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
   const handleDownloadResume = () => {
-  window.open("public/images/Atharva Joshi Update Resume.pdf", "_blank");
+  window.open("images/Atharva_Joshi_Resume.pdf", "_blank");
 };
   const handleViewProjects = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
