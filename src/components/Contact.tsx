@@ -177,7 +177,7 @@ export function Contact() {
                             ? 'border-violet-500 shadow-lg shadow-violet-500/20'
                             : 'border-gray-200 dark:border-gray-700'
                         }`}
-                        placeholder="John Doe"
+                        placeholder="Your Name"
                       />
                     </div>
                   </div>
@@ -201,7 +201,7 @@ export function Contact() {
                             ? 'border-violet-500 shadow-lg shadow-violet-500/20'
                             : 'border-gray-200 dark:border-gray-700'
                         }`}
-                        placeholder="john@example.com"
+                        placeholder="example@gmail.com"
                       />
                     </div>
                   </div>
@@ -247,7 +247,7 @@ export function Contact() {
                         ? 'border-violet-500 shadow-lg shadow-violet-500/20'
                         : 'border-gray-200 dark:border-gray-700'
                     }`}
-                    placeholder="Tell me about your project..."
+                    placeholder="Describe your message here..."
                   />
                 </div>
 

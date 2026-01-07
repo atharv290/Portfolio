@@ -1,15 +1,26 @@
-import { motion, AnimatePresence } from 'framer-motion';
-import { Briefcase, Calendar, MapPin, TrendingUp, Award, X, Download } from 'lucide-react';
-import { useState } from 'react';
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  Briefcase,
+  Calendar,
+  MapPin,
+  TrendingUp,
+  Award,
+  X,
+  Download,
+} from "lucide-react";
+import { useState } from "react";
 
 export function Experience() {
   const [showCertificate, setShowCertificate] = useState(false);
 
   return (
-    <section id="experience" className="py-24 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
+    <section
+      id="experience"
+      className="py-24 bg-gray-50 dark:bg-gray-900 relative overflow-hidden"
+    >
       {/* Background decoration */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(139,92,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(139,92,246,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -18,7 +29,7 @@ export function Experience() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <motion.div 
+          <motion.div
             className="inline-block mb-4"
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -50,7 +61,7 @@ export function Experience() {
             {/* Experience Card */}
             <div className="relative pl-16 md:pl-24 pb-12">
               {/* Animated timeline dot */}
-              <motion.div 
+              <motion.div
                 className="absolute left-[1.1rem] md:left-[2.1rem] top-3 w-5 h-5 rounded-full bg-gradient-to-br from-violet-500 to-purple-500 ring-4 ring-white dark:ring-gray-900 shadow-lg"
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
@@ -59,14 +70,14 @@ export function Experience() {
               >
                 <motion.div
                   className="absolute inset-0 rounded-full bg-gradient-to-br from-violet-500 to-purple-500"
-                  animate={{ 
+                  animate={{
                     scale: [1, 1.5, 1],
-                    opacity: [0.5, 0, 0.5]
+                    opacity: [0.5, 0, 0.5],
                   }}
                   transition={{
                     duration: 2,
                     repeat: Infinity,
-                    ease: "easeInOut"
+                    ease: "easeInOut",
                   }}
                 />
               </motion.div>
@@ -79,7 +90,7 @@ export function Experience() {
                 {/* Header */}
                 <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
                   <div className="flex items-start gap-4">
-                    <motion.div 
+                    <motion.div
                       className="p-3 bg-gradient-to-br from-violet-500 to-purple-500 rounded-xl shadow-lg"
                       whileHover={{ rotate: 360 }}
                       transition={{ duration: 0.6 }}
@@ -95,7 +106,7 @@ export function Experience() {
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex flex-col gap-2">
                     <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
                       <Calendar size={16} className="text-violet-500" />
@@ -118,9 +129,9 @@ export function Experience() {
                   </div>
                   <div className="space-y-3">
                     {[
-                      'Developed end-to-end web modules under senior developer guidance using HTML, CSS, JavaScript, and backend frameworks',
-                      'Gained hands-on experience in API development, database handling, and deploying scalable applications',
-                      'Collaborated with peers to deliver functional prototypes within deadlines'
+                      "Developed end-to-end web modules under senior developer guidance using HTML, CSS, JavaScript, and backend frameworks",
+                      "Gained hands-on experience in API development, database handling, and deploying scalable applications",
+                      "Collaborated with peers to deliver functional prototypes within deadlines",
                     ].map((responsibility, i) => (
                       <motion.div
                         key={i}
@@ -142,8 +153,17 @@ export function Experience() {
                 {/* Tech stack */}
                 <div className="pt-6 border-t border-gray-200 dark:border-gray-700">
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="text-sm text-gray-600 dark:text-gray-400 mr-2">Technologies:</span>
-                    {['HTML', 'CSS', 'JavaScript', 'Backend Frameworks', 'RESTful APIs', 'Database Management'].map((tech, i) => (
+                    <span className="text-sm text-gray-600 dark:text-gray-400 mr-2">
+                      Technologies:
+                    </span>
+                    {[
+                      "HTML",
+                      "CSS",
+                      "JavaScript",
+                      "Backend Frameworks",
+                      "RESTful APIs",
+                      "Database Management",
+                    ].map((tech, i) => (
                       <motion.span
                         key={i}
                         initial={{ opacity: 0, scale: 0.8 }}
@@ -226,31 +246,18 @@ export function Experience() {
               <div className="relative overflow-auto max-h-[70vh] p-4">
                 <div className="flex flex-col items-center">
                   {/* Placeholder for certificate image - Replace with your actual certificate image */}
-                  <div className="w-full max-w-3xl aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 rounded-xl border-4 border-dashed border-gray-300 dark:border-gray-600 flex flex-col items-center justify-center p-8 mb-4">
-                    <Award size={64} className="text-gray-400 dark:text-gray-500 mb-4" />
-                    <p className="text-gray-500 dark:text-gray-400 text-center text-lg mb-2">
-                      Your Internship Certificate Image
-                    </p>
-                    <p className="text-gray-400 dark:text-gray-500 text-center text-sm">
-                      
-                    </p>
-                  </div>
-                  
-                  {/* Image description */}
-                  <div className="text-center max-w-2xl">
-                    <h4 className="font-['Space_Grotesk'] text-lg text-gray-900 dark:text-white mb-2">
-                      Certificate of Completion
-                    </h4>
-                    <p className="text-gray-600 dark:text-gray-400 mb-4">
-                      This certificate is awarded to <span className="font-semibold text-violet-600 dark:text-violet-400">Atharva Joshi</span> for successfully completing the Full Stack Development Internship at Sumago Infotech.
-                    </p>
-                    <div className="flex flex-wrap gap-2 justify-center mb-4">
-                      {['Full Stack Development', 'Web Development', 'API Integration', 'Database Management'].map((skill, i) => (
-                        <span key={i} className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300 rounded-full text-sm">
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
+                  {/* Scrollable Certificate Image */}
+                  <div className="flex justify-center items-center overflow-y-auto p-4">
+                    <img
+                      src="/images/sumagocertificate.jpg"
+                      alt="Internship Certificate"
+                      style={{
+                        width: "600px", // force small size
+                        maxWidth: "90%", // responsive fallback
+                        height: "auto",
+                      }}
+                      className="rounded-lg shadow-md border border-gray-300 dark:border-gray-600"
+                    />
                   </div>
                 </div>
               </div>
@@ -264,14 +271,6 @@ export function Experience() {
                   Close
                 </button>
                 <div className="flex gap-3">
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-violet-500 to-purple-500 text-white rounded-lg hover:from-violet-600 hover:to-purple-600 transition-all"
-                  >
-                    <Download size={18} />
-                    Download Certificate
-                  </motion.button>
                   <button
                     onClick={() => setShowCertificate(false)}
                     className="px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"

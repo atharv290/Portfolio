@@ -19,7 +19,7 @@ const skillCategories = [
     icon: Palette,
     color: 'from-pink-500 to-rose-500',
     skills: [
-      { name: 'React.js', level: 85 },
+      { name: 'React.js', level: 50 },
       { name: 'HTML/CSS', level: 95 },
       { name: 'JavaScript', level: 85 },
       { name: 'Tailwind', level: 88 },
